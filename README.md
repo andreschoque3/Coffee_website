@@ -1,4 +1,2 @@
 # Coffee_website
 This a website for a small coffee shop
-
-ennnnn merge conflict
