@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Java Loco - Home</title>
 </head>
 <body>
@@ -23,9 +28,106 @@
             <h1>Order our Coffee Now!</h1>
     
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolores a nim aliquid officiis aut quam.</p>
-            <button class="btn-white">Order here</button>
+            <button class="btn-white">Check Out</button>
         </div>
     </div>   
 </div>
+
+<div class="container">
+    <div class="middle-container">
+        <h1>Our Services</h1>
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img id='slide-1' src="/Images/carousel-outside.jpg" height="411" width="720">
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img id='slide-2' src="/Images/carousel-food.jpeg" height="411" width="720">
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img id='slide-3' src="/Images/carousel-shop.jpg" height="411" width="720">   
+                    </div>
+                 </div>
+                 <!-- if needed later -->
+                 <div class="swiper-pagination"></div> 
+                 <div class="swiper-button-prev"></div>
+                 <div class="swiper-button-next"></div>
+            </div>
+        </div>
+            
+        
+        <button class="btn-black">Order Here</button>
+    </div>
+    <div class="flex-container">
+        <div class="boba-text-col">
+            <h1>Try Our New Flavors!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero error amet quam tempora consequatur quasi, saepe ut, 
+                aperiam labore laudantium nesciunt nostrum cupiditate dolor autem consectetur rem harum illo et? Nulla rem Soluta nihil ut autem!
+            </p>
+        </div>
+        <div class="boba-img-col">
+            <img src="Images/boba_landscape.png" alt="Boba landscape">
+        </div>
+    </div>
+    
+         
+        </div>
+<div class="container">
+    <div id="contact">
+        <div class="contact-form">
+            <div class="contact-left">
+        <h1>
+            Contact Us
+        </h1>
+    </div>
+    <div class="contact-right">
+    <form>
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+        <button type="submit" class="btn-submit">Submit</button>
+    </form>
+    </div>
+   </div>
+</div>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="top">
+            <nav>
+                <ul>
+                    <li>
+                        <li><a href="/#header">Home</a></li>
+                        <li><a href="/About/about.html">About</a></li>
+                        <li><a href="/Menu/menu.html">Menu</a></li>
+                        <li><a href="/Locations/locations.html">Locations</a></li>
+                        <li><a href="/Checkout/checkout.html">Checkout</a></li>
+                        <li><a href="/#contact">Contact Us</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="social-brands">
+                <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <p>©️ 2024 Java Loco. All rights reserved.</p>
+            </div>
+            <div class="terms">
+                <p>Terms & Conditions</p>
+                <p>Return Policy</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>

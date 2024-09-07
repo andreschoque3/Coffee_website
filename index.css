@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,6 +14,42 @@ body {
     color: white;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #EBEAB4;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul LI a:hover::after {
+    width: 100%;
+}
+
+
 .header-section {
     width: 100%;
     height: 100vh;
@@ -22,16 +58,258 @@ body {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./Images/home-bg.jpg);
     position: relative;
 }
+
 .container {
     padding: 10px 10%;
-
 }
+
+
 .header-text h1{
     font-size: 75px;
-    margin: 40px 0;
+    margin-top: 20%;
+    color: white;
 }
 
 .header-text p {
-    margin: 30px 0;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.btn-white {
+    border-radius: 50px;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* ------Carousel------- */
+
+.btn-black{
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 18px;
+    cursor: pointer;
+    position: relative;
+    left: 43%;
+    top: 1%;
+}
+
+.middle-container h1{
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: hidden; /* Hide scrollbar */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    justify-content: center;
+}
+
+.carousel img {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+.slider-wrapper {
+    width: 100%;
+}
+
+/* .swiper-button-prev , .swiper-button-next{
+    background: black;
+    color: white;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+} */
+
+.card-list {
+    display: flex;
+    align-items: center;
+}
+
+.card-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.card-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    
+}
+
+/* --------Boba--------- */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.boba-text-col {
+    flex-basis: 50%; 
+}
+
+.boba-img-col {
+    flex-basis: 50%; 
+    margin-left: 5%; 
+}
+
+.boba-text-col h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+   
+}
+
+.boba-text-col p {
+    font-size: 20px;
+    margin: 0;
+    color: black;
+}
+
+.boba-img-col img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+/* --------Contact-------- */
+
+.contact-form {
+    display: flex;                   
+    justify-content: space-between;  
+    align-items: flex-start;         
+    padding: 20px;                   
+    max-width: 100%;                
+    margin: 20px auto;                   
+    border-radius: 8px;              
+
+}
+
+
+.contact-left {
+    flex-basis: 35%;                 
+    margin-right: 20px;              
+}
+
+.contact-form h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.contact-right {
+    flex-basis: 60%;                 
+}
+
+.contact-left h1 {
+    margin-top: 30px;                
+    font-size: 35px;                 
+}
+
+.contact-left p {
+    margin-top: 10px;                
+    font-size: 16px;                 
+    color: #666;                     
+}
+
+.contact-right form {
+    width: 100%;                     
+}
+
+form input, form textarea {
+    width: 100%;                     
+    padding: 15px;                  
+    margin: 15px 0;                
+    color: black;                   
+    font-size: 18px;                
+    border-radius: 6px;             
+}
+
+form .btn-submit {
+    padding: 14px 60px;             
+    font-size: 18px;                
+    margin-top: 20px;               
+    cursor: pointer;                
+    border-radius: 16px;            
+    background-color: black;        
+    color: white;                   
+    margin-bottom: 10px;            
+}
+
+
+
+  
+
+
+/* Footer */
+
+.footer {
+    background-color: black;
+}
+
+.social-brands{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-brands a i{
+    transition: transform 0.5s;
+}
+
+.social-brands a i:hover{
+    color: #EBEAB4;
+    transform: translateY(-5px);
+}
+.fa-brands{
+    color: white;
     font-size: 25px;
+    margin: 0 20px;
+}
+
+.copyright p{
+    text-align: center;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+}
+
+.terms p{
+    margin: 10px 20px;
+    color: #EBEAB4;
+    cursor: pointer;
 }
