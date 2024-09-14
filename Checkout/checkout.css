@@ -191,6 +191,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     margin: 20px 0;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .complete-order:hover, .continue-shopping:hover {

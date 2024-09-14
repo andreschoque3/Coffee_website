@@ -77,8 +77,8 @@ nav ul LI a:hover::after {
 
 .btn-white {
     border-radius: 50px;
-    border: none;
-    color: black;
+    border: 1px solid white;
+    color: white;
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
