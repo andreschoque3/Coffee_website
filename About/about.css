@@ -136,6 +136,7 @@ nav ul li a:hover::after {
 
 .btn-div {
     text-align: center;
+    margin-top: 30px;
 }
 
 .join-btn {
@@ -148,6 +149,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     margin: 20px 0;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .join-btn:hover {
