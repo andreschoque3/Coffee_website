@@ -78,7 +78,7 @@ nav ul LI a:hover::after {
 }
 
 /* --------Why Join--------- */
-.flex-container {
+.why-join-flex{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -88,29 +88,29 @@ nav ul LI a:hover::after {
     margin: 20px auto;
 }
 
-.boba-text-col {
+.flex-join-text-col {
     flex-basis: 50%; 
 }
 
-.boba-img-col {
+.flex-join-img-col {
     flex-basis: 50%; 
     margin-left: 5%; 
 }
 
-.boba-text-col h1 {
+.flex-join-text-col h1 {
     font-size: 30px;
     margin-bottom: 10px;
     color: black;
    
 }
 
-.boba-text-col p {
+.flex-join-text-col p {
     font-size: 20px;
     margin: 0;
     color: black;
 }
 
-.boba-img-col img {
+.flex-join-img-col img {
     width: 100%; 
     height: auto; 
     border-radius: 8px;
@@ -119,22 +119,20 @@ nav ul LI a:hover::after {
 /* ------Form------- */
 
 .contact-form{
-    width: 135%;
+    width: 100%;
 }
 
-.join-container {
-    display: flex;
+.join-form-section {
     justify-content: center;
     align-items: center;
-    width: 100%;
-    /* padding: 10px 10%; */
+    text-align: center;
 }
 
 form {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    margin: auto;
 }
 
 form input, select {
@@ -157,7 +155,7 @@ form .btn-submit {
     margin-bottom: 10px;
 }
 
-.join-container h1{
+.join-form-section h1{
     color: black;
     font-size: 30px;
     text-align: center;
