@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Java Loco - Join Us</title>
+</head>
+<body>
+<div class="header-section">
+        <div class="logo-btn">
+            <!-- <i class="fa-solid fa-arrow-left" id="back-btn"></i> -->
+            <img src="../Images/Java-Loco.png"><a href="https://andreschoque3.github.io/Coffee_website/#header"></a></img>
+        </div>
+        <div class="login">
+                <div class="wrapper">
+                    <form action="">
+                        <h1>Login</h1>
+                        <div class="input-box">
+                            <input class="input-bar" type="text" placeholder="Username" required>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input class="input-bar" id="password" type="password" placeholder="Password" required />
+                                <i class="fa-solid fa-eye-slash" id="toggle-pass"></i>
+                                <i class="fa-solid fa-eye" id="hide-pass" style="display: none;"></i>
+                        </div>
+                        <div class="rem-for">
+                            <div class="checkbox-label">
+                                <input type="checkbox" id="rem-check">
+                            <label for="rem-check">Remember Me</label>
+                            </div>
+                            
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+        
+                        <div class="reg-link">
+                            <p>Don't have an account? <a href="#">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+        </div> 
+</div>   
+
+
+<script>
+    const passwordInput = document.getElementById('password');
+    const togglePass = document.getElementById('toggle-pass');
+    const hidePass = document.getElementById('hide-pass');
+    const backBtn = document.getElementById('back-btn');
+
+togglePass.addEventListener('click', function () {
+    passwordInput.setAttribute('type', 'text');
+    togglePass.style.display = 'none';
+    hidePass.style.display = 'block';
+});
+
+hidePass.addEventListener('click', function () {
+    passwordInput.setAttribute('type', 'password');
+    hidePass.style.display = 'none';
+    togglePass.style.display = 'block';
+});
+</script>
+</body>
+</html>
