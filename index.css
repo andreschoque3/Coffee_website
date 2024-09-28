@@ -75,6 +75,11 @@ nav ul LI a:hover::after {
     font-size: 20px;
 }
 
+.btn-white:hover{
+    background-color: white;
+    color: black;
+}
+
 .btn-white {
     border-radius: 50px;
     border: 1px solid white;
@@ -86,7 +91,10 @@ nav ul LI a:hover::after {
     font-size: 16px;
     margin: 5px;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+
 
 /* ------Carousel------- */
 
