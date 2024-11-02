@@ -1,3 +1,4 @@
+/* ------------Global CSS -----------------*/
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -12,6 +13,11 @@ html {
 body {
     color: white;
 }
+
+.container {
+    padding: 10px 10%;
+}
+
 
 .logo-btn img{
     width: 100px;
@@ -28,21 +34,8 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/join-us-bg.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.141), rgba(4, 9, 30, 0.7)), url(/Images/login-bg.jpg);
     position: relative;
-}
-
-.container {
-    padding: 10px 10%;
-}
-
-
-.header-text h1{
-    font-size: 75px;
-    margin-top: 20%;
-    color: white;
-    display: flex;
-    justify-content: center;
 }
 
 .header-text p {
@@ -55,14 +48,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 5%;
 }
+
 .wrapper{
-    background: rgb(152, 149, 149);
-    border: 2px solid rgb(152, 149, 149);
-    backdrop-filter: blur(20px);
-    width: 45%;
-    height: 60vh;
+    background: rgba(2, 4, 12, 0.544);
+    backdrop-filter: blur(1px);
+    width: 35%;
+    height: 65vh;
     border-radius: 20px;
     padding: 30px 40px;
 }
@@ -120,6 +113,7 @@ body {
 .fa-solid{
     color: white;
 }
+
 #toggle-pass, #hide-pass{
     cursor: pointer;
 }
@@ -176,5 +170,3 @@ body {
 .reg-link p a:hover{
     text-decoration: underline;
 }
-
-/* -------responsive css------------ */

@@ -1,3 +1,4 @@
+/* ---------Global CSS----------- */
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -13,6 +14,12 @@ body {
     background: #EBEAB4;
     color: white;
 }
+
+.container {
+    padding: 10px 10%;
+}
+
+/* --------nav-bar-------- */
 
 nav {
     display: flex;
@@ -49,6 +56,7 @@ nav ul LI a:hover::after {
     width: 100%;
 }
 
+/* ---------------header section------------- */
 
 .header-section {
     width: 100%;
@@ -58,11 +66,6 @@ nav ul LI a:hover::after {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./Images/home-bg.jpg);
     position: relative;
 }
-
-.container {
-    padding: 10px 10%;
-}
-
 
 .header-text h1{
     font-size: 75px;
@@ -94,9 +97,68 @@ nav ul LI a:hover::after {
     transition: 0.5s;
 }
 
+/* --------middle-sect------------ */
 
+.middle-sect h1{
+    color: black;
+    text-align: center;
+}
 
-/* ------Carousel------- */
+/* --------------Carousel section-------------- */
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.left-arrow-container,
+.right-arrow-container {
+    justify-content: center;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3);
+}
+
+.card {
+    background-color: transparent;
+    justify-content: center;
+    margin: auto;
+}
+
+.card img {
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+}
+
+button.arrow {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 5em;
+    color: #FFFF;
+}
+
+button.arrow i {
+    display: inline-block;
+    line-height: 1;
+}
 
 .btn-black{
     background-color: black;
@@ -107,79 +169,20 @@ nav ul LI a:hover::after {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 18px;
+    font-size: 20px;
+    margin: 20px 0;
     cursor: pointer;
     position: relative;
     left: 43%;
     top: 1%;
 }
 
-.middle-container h1{
-    color: black;
-    font-size: 70px;
-    text-align: center;
-    padding: 10px;
-}
-
-.carousel {
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
-    display: flex;
-    overflow-x: hidden; /* Hide scrollbar */
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    border-radius: 0.5rem;
-    justify-content: center;
-}
-
-.carousel img {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    width: 100%;
-}
-
-.slider-wrapper {
-    width: 100%;
-}
-
-/* .swiper-button-prev , .swiper-button-next{
-    background: black;
-    color: white;
-    line-height: 60px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-} */
-
-.card-list {
-    display: flex;
-    align-items: center;
-}
-
-.card-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; 
-}
-
-.card-item img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    
-}
-
 /* --------Boba--------- */
-.flex-container {
+.boba {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 30px;
+    padding: 10px 10%;
     border-radius: 8px;
     max-width: 100%;
     margin: 20px auto;
@@ -198,7 +201,6 @@ nav ul LI a:hover::after {
     font-size: 30px;
     margin-bottom: 10px;
     color: black;
-   
 }
 
 .boba-text-col p {
@@ -219,11 +221,10 @@ nav ul LI a:hover::after {
     display: flex;                   
     justify-content: space-between;  
     align-items: flex-start;         
-    padding: 20px;                   
+    padding: 10px 10%;                  
     max-width: 100%;                
     margin: 20px auto;                   
-    border-radius: 8px;              
-
+    border-radius: 20px;              
 }
 
 
@@ -276,11 +277,6 @@ form .btn-submit {
     color: white;                   
     margin-bottom: 10px;            
 }
-
-
-
-  
-
 
 /* Footer */
 
