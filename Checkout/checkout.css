@@ -199,35 +199,36 @@ nav ul li a:hover::after {
     background-color: black;
 }
 
-
-
-/**** Footer-section ****/
+/**** Footer ****/
 
 .footer {
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
 }
 
-.social-brands {
+.social-brands{
     text-align: center;
     margin: 40px 0;
 }
 
-.social-brands a i {
+.social-brands a i{
     transition: transform 0.5s;
 }
 
-.social-brands a i:hover {
+.social-brands a i:hover{
     color: #EBEAB4;
     transform: translateY(-5px);
 }
-
-.fa-brands {
+.fa-brands{
     color: white;
     font-size: 25px;
     margin: 0 20px;
 }
 
-.copyright p {
+.copyright p{
     text-align: center;
 }
 
@@ -236,7 +237,7 @@ nav ul li a:hover::after {
     justify-content: center;
 }
 
-.terms p {
+.terms p{
     margin: 10px 20px;
     color: #EBEAB4;
     cursor: pointer;

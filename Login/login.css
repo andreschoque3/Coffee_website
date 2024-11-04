@@ -44,7 +44,7 @@ body {
 }
 
 /* --------Login--------- */
-.login{
+.login, .register{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ body {
     background: rgba(2, 4, 12, 0.544);
     backdrop-filter: blur(1px);
     width: 35%;
-    height: 65vh;
+    min-height: 65vh;
     border-radius: 20px;
     padding: 30px 40px;
 }
@@ -71,7 +71,6 @@ body {
     width: 100%;
     height: 50px; 
     margin: 30px 0;
-    border-radius: 40px;
 }
 
 .input-box input{
@@ -79,7 +78,6 @@ body {
     height: 100%;
     border: none;
     outline: none;
-    border-radius: 40px;
     background: transparent;
     border: 1px solid;
     font-size: 16px;
@@ -100,6 +98,7 @@ body {
 
 .input-bar{
     color: white;
+    border-radius: 10px;
 }
 
 .wrapper .rem-for{
@@ -114,7 +113,7 @@ body {
     color: white;
 }
 
-#toggle-pass, #hide-pass{
+#toggle-pass, #hide-pass,#register-toggle-pass, #register-hide-pass{
     cursor: pointer;
 }
 
@@ -142,7 +141,7 @@ body {
     width: 100%;
     height: 45px;
     background: white;
-    border-radius: 40px;
+    border-radius: 10px;
     border: none;
     outline: none;
     font-size: 16px;
@@ -150,7 +149,7 @@ body {
     font-weight: 500;
 }
 
-.wrapper .reg-link{
+.wrapper, .reg-link, .log-link{
     font-size: 14px;
     text-align: center;
     margin-top: 20px 0 15px;
@@ -170,3 +169,35 @@ body {
 .reg-link p a:hover{
     text-decoration: underline;
 }
+
+/****Regigister form****/
+.log-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+.log-link p{
+    margin-top: 30px;
+}
+
+.log-link p a:hover{
+    text-decoration: underline;
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input[type="password"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+

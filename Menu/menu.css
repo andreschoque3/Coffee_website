@@ -1,3 +1,4 @@
+/**** Global ****/
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -13,6 +14,12 @@ body {
     background: #EBEAB4;
     color: white;
 }
+
+.container {
+    padding: 10px 10%;
+}
+
+/**** Navbar ****/
 
 nav {
     display: flex;
@@ -49,6 +56,7 @@ nav ul LI a:hover::after {
     width: 100%;
 }
 
+/**** header-section ****/
 
 .header-section {
     width: 100%;
@@ -57,10 +65,6 @@ nav ul LI a:hover::after {
     background-position: center;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/menu-bg.jpg);
     position: relative;
-}
-
-.container {
-    padding: 10px 10%;
 }
 
 .container p{
@@ -75,13 +79,14 @@ nav ul LI a:hover::after {
     color: white;
 }
 
-/* ------Menu------- */
+/**** Menu  ****/
 
 .tab-titles {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .tab-links{
@@ -108,7 +113,6 @@ nav ul LI a:hover::after {
     width: 100%;
 }
 
-
 .tab-titles ul li {
     display: inline-block;
     list-style: none;
@@ -127,13 +131,11 @@ nav ul LI a:hover::after {
 .menu-body{
     background: #D9D9D9;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
     color: black;
     border-radius: 18px;
 }
-
 
 .btn-black{
     background-color: black;
@@ -198,22 +200,16 @@ thead th:nth-child(3) {
 
 
 tbody tr {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     margin: 20px 0;
 }
 
 tbody td {
-    /* display: flex;
-    align-items: center;  */
     padding: 10px;
     text-align: left
 
 }
 
 tbody td:nth-child(2) {
-    /* flex: 2;  */
     width: 70%;
 }
 
@@ -222,7 +218,6 @@ tbody td:nth-child(3) {
     width: 20%; 
 }
 
-
 tr img {
     width: 100px;
     height: 100px;
@@ -230,8 +225,7 @@ tr img {
     border-radius: 10px;
 }
 
-
-/* Mobile Order */
+/**** Mobile Order ****/
 
 .delivery {
     display: flex;
@@ -300,17 +294,14 @@ tr img {
     margin: 50px 0;
 }
 
-
-
-
-
-  
-
-
-/* Footer */
+/**** Footer ****/
 
 .footer {
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
 }
 
 .social-brands{
@@ -334,7 +325,6 @@ tr img {
 
 .copyright p{
     text-align: center;
-    color: white;
 }
 
 .terms {
