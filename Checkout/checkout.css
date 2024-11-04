@@ -203,10 +203,6 @@ nav ul li a:hover::after {
 
 .footer {
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10%;
 }
 
 .social-brands{
