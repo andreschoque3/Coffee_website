@@ -34,7 +34,7 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.141), rgba(4, 9, 30, 0.7)), url(/Images/login-bg.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.141), rgba(4, 9, 30, 0.7)), url(./Images/login-bg.jpg);
     position: relative;
 }
 
