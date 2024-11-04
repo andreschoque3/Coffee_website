@@ -1,4 +1,5 @@
-/* ---------Global CSS----------- */
+/**** Global ****/
+
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -19,7 +20,7 @@ body {
     padding: 10px 10%;
 }
 
-/* --------nav-bar-------- */
+/**** Navbar ****/
 
 nav {
     display: flex;
@@ -56,7 +57,7 @@ nav ul LI a:hover::after {
     width: 100%;
 }
 
-/* ---------------header section------------- */
+/**** header-section ****/
 
 .header-section {
     width: 100%;
@@ -97,14 +98,14 @@ nav ul LI a:hover::after {
     transition: 0.5s;
 }
 
-/* --------middle-sect------------ */
+/**** middle-sect ****/
 
 .middle-sect h1{
     color: black;
     text-align: center;
 }
 
-/* --------------Carousel section-------------- */
+/**** Carousel section ****/
 
 .slider-wrapper {
     display: flex;
@@ -177,7 +178,8 @@ button.arrow i {
     top: 1%;
 }
 
-/* --------Boba--------- */
+/**** Boba ****/
+
 .boba {
     display: flex;
     justify-content: space-between;
@@ -215,7 +217,7 @@ button.arrow i {
     border-radius: 8px;
 }
 
-/* --------Contact-------- */
+/**** Contact ****/
 
 .contact-form {
     display: flex;                   
@@ -264,7 +266,8 @@ form input, form textarea {
     margin: 15px 0;                
     color: black;                   
     font-size: 18px;                
-    border-radius: 6px;             
+    border-radius: 6px;      
+    border-color: transparent;     
 }
 
 form .btn-submit {
@@ -278,7 +281,7 @@ form .btn-submit {
     margin-bottom: 10px;            
 }
 
-/* Footer */
+/**** Footer ****/
 
 .footer {
     background-color: black;
