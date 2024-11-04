@@ -9,24 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Java Loco - Join Us</title>
+    <title>Login - Java Loco</title>
 </head>
 <body>
 <div class="header-section">
-        <div class="logo-btn">
-            <!-- <i class="fa-solid fa-arrow-left" id="back-btn"></i> -->
-            <img src="../Images/Java-Loco.png"><a href="https://andreschoque3.github.io/Coffee_website/#header"></a></img>
-        </div>
-        <div class="login">
+        <div class="login" id="login-form">
                 <div class="wrapper">
                     <form action="">
                         <h1>Login</h1>
                         <div class="input-box">
-                            <input class="input-bar" type="text" placeholder="Username" required>
+                            <input class="input-bar" type="email" placeholder="Email" required>
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <div class="input-box">
-                            <input class="input-bar" id="password" type="password" placeholder="Password" required />
+                            <input class="input-bar" id="password" type="password" placeholder="Password" required/>
                                 <i class="fa-solid fa-eye-slash" id="toggle-pass"></i>
                                 <i class="fa-solid fa-eye" id="hide-pass" style="display: none;"></i>
                         </div>
@@ -35,37 +31,106 @@
                                 <input type="checkbox" id="rem-check">
                             <label for="rem-check">Remember Me</label>
                             </div>
-                            
                             <a href="#">Forgot password?</a>
                         </div>
                         <button type="submit" class="btn">Login</button>
         
                         <div class="reg-link">
-                            <p>Don't have an account? <a href="#">Register</a></p>
+                            <p>Don't have an account? Register <a href="#" id="show-register">Here</a></p>
                         </div>
                     </form>
                 </div>
         </div> 
+
+        <div class="register" id="register-form" style="display: none;">
+            <div class="wrapper">
+                <form action="">
+                    <h1>Register</h1>
+                    <div class="input-box">
+                        <input class="input-bar" type="text" placeholder="Name" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input class="input-bar" type="email" placeholder="Email" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input class="input-bar" type="password" placeholder="Password" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input class="input-bar" id="register-password" type="password" placeholder="Confirm password" required/>
+                        <i class="fa-solid fa-eye-slash" id="register-toggle-pass"></i>
+                        <i class="fa-solid fa-eye" id="register-hide-pass" style="display: none;"></i>
+                    </div>
+                    <div class="rem-for">
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="rem-check">
+                        <label for="rem-check">Remember Me</label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                     <div class="log-link">
+                        <p>Already have an account? Login <a href="#" id="show-login">Here</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 </div>   
 
 
 <script>
-    const passwordInput = document.getElementById('password');
-    const togglePass = document.getElementById('toggle-pass');
-    const hidePass = document.getElementById('hide-pass');
-    const backBtn = document.getElementById('back-btn');
+const loginPasswordInput = document.getElementById('password');
+const loginTogglePass = document.getElementById('toggle-pass');
+const loginHidePass = document.getElementById('hide-pass');
 
-togglePass.addEventListener('click', function () {
-    passwordInput.setAttribute('type', 'text');
-    togglePass.style.display = 'none';
-    hidePass.style.display = 'block';
+loginTogglePass.addEventListener('click', function () {
+    loginPasswordInput.setAttribute('type', 'text');
+    loginTogglePass.style.display = 'none';
+    loginHidePass.style.display = 'block';
 });
 
-hidePass.addEventListener('click', function () {
-    passwordInput.setAttribute('type', 'password');
-    hidePass.style.display = 'none';
-    togglePass.style.display = 'block';
+loginHidePass.addEventListener('click', function () {
+    loginPasswordInput.setAttribute('type', 'password');
+    loginHidePass.style.display = 'none';
+    loginTogglePass.style.display = 'block';
 });
+
+const registerPasswordInput = document.getElementById('register-password');
+const registerTogglePass = document.getElementById('register-toggle-pass');
+const registerHidePass = document.getElementById('register-hide-pass');
+
+registerTogglePass.addEventListener('click', function () {
+    registerPasswordInput.setAttribute('type', 'text');
+    registerTogglePass.style.display = 'none';
+    registerHidePass.style.display = 'block';
+});
+
+registerHidePass.addEventListener('click', function () {
+    registerPasswordInput.setAttribute('type', 'password');
+    registerHidePass.style.display = 'none';
+    registerTogglePass.style.display = 'block';
+});
+
+const loginForm = document.getElementById('login-form');
+const registerForm = document.getElementById('register-form');
+const showRegisterLink = document.getElementById('show-register');
+const showLoginLink = document.getElementById('show-login');
+
+showRegisterLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.style.display = 'none';
+    registerForm.style.display = 'flex';
+});
+
+showLoginLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    registerForm.style.display = 'none';
+    loginForm.style.display = 'flex';
+});
+
 </script>
 </body>
 </html>

@@ -75,6 +75,10 @@ nav ul li a:hover::after {
 
 /**** middle-section ****/
 
+.middle-sect{
+    margin-bottom: 40px;
+}
+
 .sub-head {
     text-align: center;
     color: black;
@@ -157,33 +161,32 @@ nav ul li a:hover::after {
     color: white;
 }
 
-/**** Footer-section ****/
+/**** Footer ****/
 
 .footer {
     background-color: black;
 }
 
-.social-brands {
+.social-brands{
     text-align: center;
     margin: 40px 0;
 }
 
-.social-brands a i {
+.social-brands a i{
     transition: transform 0.5s;
 }
 
-.social-brands a i:hover {
+.social-brands a i:hover{
     color: #EBEAB4;
     transform: translateY(-5px);
 }
-
-.fa-brands {
+.fa-brands{
     color: white;
     font-size: 25px;
     margin: 0 20px;
 }
 
-.copyright p {
+.copyright p{
     text-align: center;
 }
 
@@ -192,7 +195,7 @@ nav ul li a:hover::after {
     justify-content: center;
 }
 
-.terms p {
+.terms p{
     margin: 10px 20px;
     color: #EBEAB4;
     cursor: pointer;
